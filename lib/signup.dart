@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'add_task_list.dart';
-import 'todo_initial_screen.dart';
+import 'routes.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -108,11 +107,7 @@ class _SignUpState extends State<SignUp> {
                   style: Theme.of(context).elevatedButtonTheme.style,
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => AppInitialScreen(tasks: []),
-                          ));
+                      Navigator.pushNamed(context, Routes.initialScreenRoute);
                     }
                   },
                   child: const Text("Sign Up"),

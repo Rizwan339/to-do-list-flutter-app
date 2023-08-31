@@ -32,14 +32,14 @@ class _LoginState extends State<Login> {
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 100,
                 ),
-                Text(
+                const Text(
                   'Login',
                   style: TextStyle(fontSize: 50),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 // TextFormField(
@@ -79,7 +79,7 @@ class _LoginState extends State<Login> {
                 const SizedBox(
                   height: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextFormField(
@@ -99,10 +99,10 @@ class _LoginState extends State<Login> {
                     labelText: 'Enter your password',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ElevatedButton(
@@ -122,11 +122,11 @@ class _LoginState extends State<Login> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SignUp()),
+                      MaterialPageRoute(builder: (context) => const SignUp()),
                     );
                   },
                   child: RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                       text: "Don't have an Account? ",
                       style: TextStyle(color: Colors.black),
                       children: <TextSpan>[
