@@ -23,3 +23,9 @@ class Task {
 void deleteTask(List<Task> tasks, int index) {
   tasks.removeAt(index);
 }
+
+class InitialScreenArguments {
+  final task;
+
+  InitialScreenArguments({required this.task});
+}
